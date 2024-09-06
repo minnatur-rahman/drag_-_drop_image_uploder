@@ -36,4 +36,14 @@ DragArea.addEventListener("drop", (event) => {
 function ShowMe(){
     let filetype = myFile.type;
     let ValidEx = ["image/jpeg", "image/jpg", "image/png"];
+
+    if(ValidEx.includes(filetype)){
+
+        let fileReader = new FileReader();
+
+        fileReader.onload = () => {
+            
+        }
+
+    }
 } 
