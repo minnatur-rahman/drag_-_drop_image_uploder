@@ -10,5 +10,13 @@ button.onclick = () => {
 
 input.addEventListener("change",function(){
     myFile = this.files[0];
+    DragArea.classList.add("active");
+})
+
+DragArea.addEventListener("dragover", (event) => {
+    event.preventDefault();
+    DragArea.classList.add("active");
+
+    DragText.textContent = "Release to upload file";
     
-});
+})
