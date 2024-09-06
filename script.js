@@ -7,3 +7,7 @@ let myFile;
 button.onclick = () => {
     input.click();
 }
+
+input.addEventListener("change",function(){
+    
+});
