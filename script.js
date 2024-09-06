@@ -21,7 +21,19 @@ DragArea.addEventListener("dragover", (event) => {
     
 })
 
-.DragArea.addEventListener("dragleave", () => {
+DragArea.addEventListener("dragleave", () => {
     DragArea.classList.remove("active");
     DragText.textContent = "Drag & Drop";
 })
+
+DragArea.addEventListener("drop", (event) => {
+    event.preventDefault();
+    myFile = event.dataTransfer.files[0];
+
+
+})
+
+function ShowMe(){
+    let filetype = myFile.type;
+    let ValidEx = ["image/jpeg", "image/jpg", "image/png"];
+} 
