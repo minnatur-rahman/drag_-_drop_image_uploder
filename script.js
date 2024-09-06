@@ -11,6 +11,8 @@ button.onclick = () => {
 input.addEventListener("change",function(){
     myFile = this.files[0];
     DragArea.classList.add("active");
+
+    ShowMe()
 })
 
 DragArea.addEventListener("dragover", (event) => {
@@ -30,7 +32,7 @@ DragArea.addEventListener("drop", (event) => {
     event.preventDefault();
     myFile = event.dataTransfer.files[0];
 
-
+    ShowMe()
 })
 
 function ShowMe(){
@@ -50,5 +52,6 @@ function ShowMe(){
         fileReader.readAsDataURL(myFile);
     } else {
         alert("This file is not valid;");
+        DragArea.classList.remove("active");
     }
 } 
