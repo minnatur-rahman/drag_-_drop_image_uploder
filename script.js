@@ -9,5 +9,6 @@ button.onclick = () => {
 }
 
 input.addEventListener("change",function(){
+    myFile = this.files[0];
     
 });
