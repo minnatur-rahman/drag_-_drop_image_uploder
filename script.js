@@ -20,3 +20,8 @@ DragArea.addEventListener("dragover", (event) => {
     DragText.textContent = "Release to upload file";
     
 })
+
+.DragArea.addEventListener("dragleave", () => {
+    DragArea.classList.remove("active");
+    DragText.textContent = "Drag & Drop";
+})
