@@ -42,8 +42,13 @@ function ShowMe(){
         let fileReader = new FileReader();
 
         fileReader.onload = () => {
-            
-        }
+            let imgUrl = fileReader.result;
+            let img = `<img src="${imgUrl}" alt="">`
 
+            DragArea.innerHTML = img
+        }
+        fileReader.readAsDataURL(myFile);
+    } else {
+        alert("This file is not valid;");
     }
 } 
