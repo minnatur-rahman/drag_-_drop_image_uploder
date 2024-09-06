@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}  
+html, body {
+    height: 100%; /* This makes sure both html and body take the full viewport height */
+    background-color: #f1f1f1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AppBody {
+    border: 3px dotted #d1d6d6;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+  
